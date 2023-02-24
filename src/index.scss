@@ -8,10 +8,21 @@
 }
 
 p {
-    margin: 0 !important;
+    margin: 0;
 }
 
 a:is(:visited, :link) {
     text-decoration: none !important;
     color: inherit;
+}
+
+input[type=text]:placeholder-shown {
+    font-size: 0.9rem;
+    font-family: var(--font-family-4);
+    font-weight: 600;
+}
+
+button {
+    border: unset;
+    outline: unset;
 }

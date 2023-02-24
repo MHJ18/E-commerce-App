@@ -1,21 +1,132 @@
 .header__ {
-
     &section {
         font-size: 0.9rem;
     }
 
     &top {
+        & .margin {
+            margin-left: auto;
+        }
+
         background-color: var(--color-primary);
 
         & .telephone {
             &>a {
                 font-family: inherit;
-                color: inherit;
+                color: #aaa !important;
                 text-decoration: unset;
             }
         }
     }
-    &main{
-        
+
+    &main {
+        & .menu {
+            & .items {
+                transition: all 0.2s;
+
+                &:hover:not(:last-child) {
+                    stroke: #ce7c1e;
+                    color: #e7a04d;
+                }
+
+                & .menu-item {
+                    color: #ff9011;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                    word-break: break-word;
+
+                }
+
+                svg {
+
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    fill: currentColor;
+                }
+
+                & .cart-icon {
+                    fill: #ff5400;
+                    animation: cart 1s ease-in;
+                }
+
+                & .cart-item {
+                    color: #ffbc42;
+                }
+
+                & .notification {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: -10px;
+                    left: 27px;
+                    background-color: #e98008;
+                    padding: 0 0.2rem;
+
+                    font-size: 0.9rem;
+                    text-align: center;
+                    border-radius: 10rem;
+                    color: white;
+                    animation: cartnumber 1s ease-out;
+                }
+            }
+        }
+
+        & .form-control {
+            box-sizing: border-box;
+            outline: unset;
+            border: unset;
+            font-size: 0.8rem;
+        }
+
+        & .form-control:focus {
+            box-shadow: unset !important;
+            outline: unset;
+            border: unset;
+        }
+
+        & .button-color {
+            background-color: #fc9c2e;
+            border: unset;
+            outline: unset;
+
+            &:hover {
+                background-color: darken($color: #ffa641, $amount: 5);
+            }
+        }
+
+        & .react-icon {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+}
+
+@keyframes cart {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+
+@keyframes cartnumber {
+    0% {
+        opacity: 0;
+        // transform: translateY(-50%);
+        top: -50px;
+    }
+
+    100% {
+        opacity: 1;
+        // transform: translateY(0);
+        top: -10px;
     }
 }
