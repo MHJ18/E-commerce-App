@@ -3,4 +3,15 @@
     --font-family-2: "Poppins", sans-serif;
     --font-family-3: "Josefin Sans", sans-serif;
     --font-family-4: "Nunito", sans-serif;
+    --color-primary: #131921;
+    --color-secondary: #3b4149;
+}
+
+p {
+    margin: 0 !important;
+}
+
+a:is(:visited, :link) {
+    text-decoration: none !important;
+    color: inherit;
 }

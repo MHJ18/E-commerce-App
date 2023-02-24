@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "../header/Header.jsx";
 
 const Main = () => {
-  return <div></div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default Main;
