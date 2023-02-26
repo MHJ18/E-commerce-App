@@ -1,0 +1,119 @@
+$position-values: (0: 0,
+    20: 20%,
+    30: 30%,
+    50: 50%,
+    100: 100%,
+);
+
+.home-container {
+    & .flexbox {
+        max-width: 49%;
+
+        &:hover div.hover {
+            &>img {
+                transition: all 0.6s ease-in-out !important;
+                transform: scale(1.1);
+                object-fit: contain !important;
+            }
+        }
+    }
+
+    & .gap {
+        gap: 0.6rem;
+    }
+
+    & .rounded-image {
+        border-radius: 4px !important;
+        overflow: hidden;
+    }
+
+    & .carousel-indicators {
+        bottom: -45px;
+    }
+
+    & .carousel-indicators [data-bs-target] {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+    }
+
+    & .btn-carousal {
+        background-color: #615e63 !important;
+    }
+
+    & .btn-round {
+        border-radius: 1rem;
+        background-color: #424042;
+        font-size: 0.9rem;
+
+        &:hover {
+            background-color: darken($color: #2e2c2f, $amount: 1);
+            transform: scale(0.97);
+        }
+    }
+
+    & .btn-round-child {
+        border-radius: 1rem;
+        background-color: #424042;
+        font-size: 0.7rem;
+
+        &:hover {
+            background-color: darken($color: #2e2c2f, $amount: 1);
+            transform: scale(0.97);
+        }
+    }
+
+    & .image-text {
+        top: 10%;
+        left: 5%;
+
+        &-title-child {
+            letter-spacing: 0.1px;
+            text-transform: uppercase;
+            color: #d86117;
+            font-weight: 600;
+            font-size: 0.8rem;
+            font-family: var(--font-family-1);
+        }
+
+        &-des-child {
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+
+        & .image-heading-child {
+            font-size: 1.7rem;
+            letter-spacing: 0.3px;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+    }
+
+    & .image-text {
+        top: 10%;
+        left: 5%;
+
+        &-title {
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            color: #d86117;
+            font-weight: 600;
+            font-family: var(--font-family-1);
+        }
+
+        &-des {
+            font-weight: 500;
+        }
+
+        & .image-heading {
+            font-size: 2.5rem;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+    }
+}
+
+.main-home-secondary {
+    background-color: #f4f5f3;
+}

@@ -22,11 +22,21 @@
     &main {
         & .menu {
             & .items {
+
                 transition: all 0.2s;
 
                 &:hover:not(:last-child) {
                     stroke: #ce7c1e;
                     color: #e7a04d;
+                }
+
+                &:hover svg.favourite {
+                    object-fit: cover;
+
+                    animation: rotate 1s ease-in-out infinite backwards;
+
+                    transform: rotate(180deg);
+
                 }
 
                 & .menu-item {
@@ -40,10 +50,11 @@
                 }
 
                 svg {
-
+                    object-fit: cover;
                     width: 2.4rem;
                     height: 2.4rem;
                     fill: currentColor;
+
                 }
 
                 & .cart-icon {
@@ -104,6 +115,50 @@
     }
 }
 
+.header__menu {
+    background-color: #20303D;
+
+    & .font-size {
+        font-size: 0.9rem;
+    }
+
+    & .dropdown-toggle {
+        border: unset;
+        background-color: unset;
+        font-size: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+
+
+        &:is(:hover, :focus :focus-visible, :focus-within) {
+            background-color: unset !important;
+            box-shadow: unset !important;
+            border: unset;
+        }
+    }
+
+    & .categories {
+        padding: 0;
+
+        &>svg {
+            width: 2rem;
+            height: 2rem;
+            color: #ff9011;
+
+        }
+    }
+
+
+    &-list {
+        & .listed-menu {
+            text-transform: uppercase;
+        }
+
+
+    }
+}
+
 @keyframes cart {
     0% {
         opacity: 0;
@@ -120,13 +175,29 @@
 @keyframes cartnumber {
     0% {
         opacity: 0;
-        // transform: translateY(-50%);
-        top: -50px;
+        transform: translateY(-50%);
+
     }
 
     100% {
         opacity: 1;
-        // transform: translateY(0);
-        top: -10px;
+        transform: translateY(0);
+
     }
+}
+
+@keyframes rotate {
+
+
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+
+
 }

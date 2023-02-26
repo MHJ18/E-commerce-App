@@ -1,0 +1,35 @@
+.badges-container {
+    padding: 2rem 0;
+
+
+    & .facilities-1 {
+
+        &:hover img {
+            animation: cart 0.6s ease-in-out;
+        }
+
+
+        & .detail-heading {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        & .detail-des {
+            font-weight: 500;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@keyframes cart {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-50%);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

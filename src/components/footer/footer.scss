@@ -1,8 +1,71 @@
-.footer {
-    background-color: #4f5f22;
-    display: inline-block;
-    color: white;
-    padding: 3rem;
-    margin: 0 10rem;
-    
+.footer__main {
+
+
+    background-color: #131515;
+
+    & .border-footer {
+        border-top: 1px solid rgb(85, 82, 82);
+    }
+
+    & .image-fluid {
+        max-width: 6%;
+        display: block;
+    }
+
+    & .newsletter {
+        font-weight: 500;
+        font-size: 1.4rem;
+        font-family: var(--font-family-1);
+    }
+
+
+
+    & .button-padding {
+        border: 2px solid white !important;
+
+
+    }
+
+    & .btn-text {
+        font-size: 0.6rem;
+        font-weight: 500;
+        font-family: var(--font-family-2);
+
+        &-inner {
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+    }
+
+    & .font-footer:is(p) {
+        padding: 0 0.4rem;
+        color: #ddd;
+        font-family: inherit;
+    }
+
+    & .font-footer-1 {
+        font-size: 0.85rem;
+        padding: 0 0.4rem;
+        font-weight: 400;
+        color: #ddd;
+    }
+
+    & .font-footer:not(p) {
+        align-self: flex-start;
+        font-size: 0.85rem;
+        padding: 0 0.4rem;
+        font-family: var(--font-family-2);
+        font-weight: 400;
+        color: #ddd;
+        transition: all 0.5s;
+        border-radius: 4px;
+
+        &:hover {
+            background-color: white;
+            color: #131515;
+            font-weight: 500;
+        }
+    }
+
+
 }

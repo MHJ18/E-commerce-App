@@ -6,6 +6,9 @@ import { BsSearch } from "react-icons/bs";
 
 import "./header.scss";
 const Header = () => {
+  let activeStyle = {
+    backgroundColor: "green",
+  };
   return (
     <>
       <header className="header__top text-white">
@@ -19,12 +22,12 @@ const Header = () => {
             <div className="col-lg-6">
               <p className="telephone text-end">
                 Hotline:
-                <a
+                <Link
                   className="text-light mx-1 hotline "
-                  href="tel:+92 3094151413"
+                  to="tel:+92 3094151413"
                 >
                   (888)-4344 6000 0000
-                </a>
+                </Link>
               </p>
               <nav></nav>
             </div>
@@ -40,7 +43,7 @@ const Header = () => {
                 </h2>
               </div>
               <div className="col-lg-4">
-                <div class="input-group ">
+                <div className="input-group ">
                   <input
                     type="text"
                     className="form-control"
@@ -61,11 +64,11 @@ const Header = () => {
                 <div className="menu-options ">
                   <div className="menu d-flex justify-content-evenly align-items-center">
                     <Link className="items d-flex align-items-center gap-1">
-                      <svg>
+                      <svg className="favourite">
                         <use xlinkHref="images/compare.svg#svg-1" />
                       </svg>
                       <p>
-                        Favourite <br /> wishlist
+                        Compare <br /> Products
                       </p>
                     </Link>
                     <Link className="items d-flex align-items-center gap-1 px-1">
@@ -73,7 +76,8 @@ const Header = () => {
                         <use xlinkHref="images/wishlist.svg#Capa_1" />
                       </svg>
                       <p>
-                        Compare <br /> Products
+                        Favourite
+                        <br /> Wishlist
                       </p>
                     </Link>
                     <Link className="items d-flex align-items-center gap-1">
@@ -89,7 +93,7 @@ const Header = () => {
                       <svg className="cart-icon">
                         <use xlinkHref="images/cart.svg#Capa_1" />
                       </svg>
-                      <span class="notification">0</span>
+                      <span className="notification">0</span>
                       <div className="d-flex flex-column align-items-center justify-content-center">
                         <p> Cart </p>
                         <p className="cart-item"> $ 10.00</p>
@@ -102,22 +106,59 @@ const Header = () => {
           </div>
         </section>
       </header>
-      <header className="header__menu bg-dark text-white">
-        <section className="header__menu-list container-xxl">
-          <nav className="">
-            <ul className="d-flex align-items-center justify content-center">
-              <li className="take-away p-2">
-                <NavLink to="" active>
-                  Home
-                </NavLink>
+      <header className="header__menu text-white mb-4">
+        <section className="header__menu-list container-xxl font-size">
+          <nav className="d-flex align-items-center justify-content-start listed-menu ">
+            <div className="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle categories"
+                type="button"
+                data-bs-toggle="dropdown"
+                data-bs-theme="dark"
+                aria-expanded="false"
+              >
+                <svg>
+                  <use xlinkHref="images/menu.svg#Capa_1" />
+                </svg>
+                <span> SHOP CATEGORIES</span>
+              </button>
+              <ul className="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <Link className="dropdown-item active" to="#">
+                    Action
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    Another action
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    Something else here
+                  </Link>
+                </li>
+                <li>
+                  <hr className="dropdown-divider" />
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    Separated link
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <ul className="d-flex align-items-center justify content-center listed-menu gap-4 mb-0">
+              <li className="take-away active p-2">
+                <NavLink>Home</NavLink>
               </li>
-              <li className="take-away p-2">
-                <NavLink to="">Our Store</NavLink>
+              <li className="take-away p-1">
+                <NavLink to="/store">Our Store</NavLink>
               </li>
-              <li className="take-away p-2">
-                <NavLink to="">Blog</NavLink>
+              <li className="take-away p-1">
+                <NavLink to="/blog">Blog</NavLink>
               </li>
-              <li className="take-away p-2">
+              <li className="take-away p-1">
                 <NavLink to="/contact">Contact</NavLink>
               </li>
             </ul>
