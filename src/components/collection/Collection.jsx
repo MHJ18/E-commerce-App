@@ -62,45 +62,45 @@ const Collection = () => {
               );
             })}
           </div>
-          <main className="brands-logo">
-            <Marquee
-              behavior="smooth"
-              direction="right"
-              speed="50"
-              gradient={false}
-              play={false}
-              style={{ height: 100 }}
-            >
-              <div className="d-flex gap-3">
-                <div className="brands-image">
-                  <img src="images/brand-01.png" alt="" />
-                </div>
-                <div className="brands-image">
-                  <img src="images/brand-02.png" alt="" />
-                </div>
-                <div className="brands-image">
-                  <img src="images/brand-03.png" alt="" />
-                </div>
-                <div className="brands-image">
-                  <img src="images/brand-04.png" alt="" />
-                </div>
-                <div className="brands-image">
-                  <img src="images/brand-05.png" alt="" />
-                </div>
-                <div className="brands-image">
-                  <img src="images/brand-06.png" alt="" />
-                </div>
-                <div className="brands-image">
-                  <img src="images/brand-07.png" alt="" />
-                </div>
-                <div className="brands-image">
-                  <img src="images/brand-08.png" alt="" />
-                </div>
-              </div>
-            </Marquee>
-          </main>
         </main>
       </section>
+      <main className="brands-logo container-xxl rounded-2">
+        <Marquee
+          behavior="smooth"
+          direction="right"
+          speed="50"
+          gradient={false}
+          play={false}
+          style={{ height: 100 }}
+        >
+          <div className="d-flex gap-3">
+            <div className="brands-image">
+              <img src="images/brand-01.png" alt="" />
+            </div>
+            <div className="brands-image">
+              <img src="images/brand-02.png" alt="" />
+            </div>
+            <div className="brands-image">
+              <img src="images/brand-03.png" alt="" />
+            </div>
+            <div className="brands-image">
+              <img src="images/brand-04.png" alt="" />
+            </div>
+            <div className="brands-image">
+              <img src="images/brand-05.png" alt="" />
+            </div>
+            <div className="brands-image">
+              <img src="images/brand-06.png" alt="" />
+            </div>
+            <div className="brands-image">
+              <img src="images/brand-07.png" alt="" />
+            </div>
+            <div className="brands-image">
+              <img src="images/brand-08.png" alt="" />
+            </div>
+          </div>
+        </Marquee>
+      </main>
     </>
   );
 };

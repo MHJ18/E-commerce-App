@@ -128,9 +128,10 @@ table {
 }
 
 body {
+  overflow: hidden;
   box-sizing: border-box !important;
   line-height: 1.6 !important;
   font-size: 62.5%;
   font-family: var(--font-family-1) !important;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased !important;
 }

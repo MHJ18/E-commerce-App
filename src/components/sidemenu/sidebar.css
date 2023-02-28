@@ -1,0 +1,114 @@
+.store__main div.sidebar__1.bg-whites {
+    background-color: wheat;
+}
+
+.store__main div.font-family {
+    font-family: var(--font-family-1);
+    font-size: 1rem;
+}
+
+.store__main h5.sidebar-heading {
+    font-family: var(--font-family-1);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.store__main h6.sidebar-heading-inner {
+    font-family: var(--font-family-2);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.store__main h5.sidebar-heading + ul > li {
+    font-family: var(--font-family-2);
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0.2rem 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.store__main h5.sidebar-heading + ul > li:hover {
+    font-family: var(--font-family-2);
+    color: #ff9011;
+}
+
+input.form-check-input:checked {
+    background-color: rgb(24, 23, 23);
+    outline: black;
+    border: rgb(29, 28, 28);
+}
+
+.form-floating > label {
+    font-family: var(--font-family-1);
+    padding: 0.2rem 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    top: 7%;
+    background-color: #eeeeee8a;
+}
+
+
+
+.input-price {
+    background-color: #eeeeee8a;
+    overflow: hidden;
+    color: #999;
+}
+
+.input-price:focus {
+    background-color: #eee;
+    color: #555;
+}
+
+.row > * {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.colors > .colors-pick:nth-child(1) {
+    background-color: #ff9011;
+}
+
+.colors-pick:nth-of-type(1) {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: red;
+    border-radius: 50%;
+
+}
+
+.colors-pick:nth-of-type(2) {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(0, 255, 42);
+    border-radius: 50%;
+
+}
+
+button.colors-pick:nth-of-type(3) {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(132, 0, 255);
+    border-radius: 50%;
+
+}
+
+
+.input-price:focus .form-floating > label {
+    background-color: #eee;
+
+}
+
+
+
+.price-sign {
+    font-size: 0.9rem;
+    font-family: var(--font-family-1);
+    font-weight: 500;
+}

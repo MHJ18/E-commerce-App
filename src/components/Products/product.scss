@@ -1,0 +1,150 @@
+.products__shop {
+    & .product-options {
+        z-index: 100;
+        transition: all 0.4s ease-in-out;
+
+        &>svg {
+            cursor: pointer;
+            transition: all 0.4s;
+            width: 2rem;
+            height: 2rem;
+
+            &:hover {
+                fill: red;
+
+                stroke: red;
+            }
+        }
+    }
+
+    & .image-secondary {
+        display: none;
+    }
+
+    & .featured-image {
+        height: 100%;
+        object-fit: cover;
+        object-position: 20%;
+        transition: all 1s;
+    }
+
+    & .featured-title {
+        color: #fff;
+        font-family: var(--font-family-2);
+        font-size: 1.4rem;
+        line-height: 1.6;
+        margin-top: 0.2rem;
+        margin-bottom: 0.1rem;
+        font-weight: 600;
+    }
+
+    & .featured-card:hover img.featured-image {
+        object-position: 70%;
+    }
+
+    & .text-position {
+        top: 7%;
+        left: 3%;
+    }
+
+    & .featured-discount {
+        font-weight: 600;
+        // letter-spacing: 0.5px;
+        font-size: 0.9rem;
+        color: #ddd;
+
+        font-family: var(--font-family-2);
+
+    }
+
+    & .featured-text {
+        font-size: 0.8rem;
+        margin-top: 0;
+        color: #fff;
+    }
+
+    & .card-image:hover img.image-secondary {
+        display: block;
+    }
+
+    & .card-image:hover img.image-primary {
+        display: none;
+    }
+
+    & .card {
+        overflow: hidden;
+
+        &:hover .product-options {
+            right: -2px;
+        }
+    }
+
+    & .position-bar {
+        overflow: hidden;
+        top: 12%;
+        z-index: 100;
+        right: -25%;
+    }
+
+    & .free-tag {
+        color: #fff;
+        padding: 0.2rem 0.7rem;
+        background-color: #0f110c;
+    }
+
+    & .product-branding {
+        color: #d62828;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        font-family: var(--font-family-2);
+    }
+
+    & .product-title {
+        font-size: 0.92rem;
+        font-weight: 600;
+        font-family: var(--font-family-2);
+    }
+
+    & .product-price {
+        font-family: var(--font-family-2);
+        font-weight: 600;
+        color: #9b2226;
+    }
+
+    & .product-like>svg {
+        width: 1.7rem;
+        height: 1.7rem;
+        overflow: hidden;
+        display: inline-block;
+        color: #8888886c;
+        stroke: white;
+        border: none;
+        transition: all 0.2s;
+
+        &:hover {
+            color: rgb(192, 11, 11);
+            transform: scale(1.1);
+        }
+    }
+
+    & .input-product:checked .product-like>svg {
+        color: rgb(192, 11, 11);
+        fill: red;
+        cursor: pointer;
+    }
+
+    & .position-like {
+        top: 3%;
+        right: 5%;
+    }
+
+    & .product-badge {
+        font-family: var(--font-family-2);
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        top: 3%;
+        left: 5%;
+        background-color: #9b2226 !important;
+    }
+}

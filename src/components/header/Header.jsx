@@ -148,18 +148,24 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <ul className="d-flex align-items-center justify content-center listed-menu gap-4 mb-0">
-              <li className="take-away active p-2">
-                <NavLink>Home</NavLink>
+            <ul className="d-flex align-items-center justify content-center listed-menu gap-2 mb-0">
+              <li className="take-away">
+                <NavLink className="p-2">Home</NavLink>
               </li>
-              <li className="take-away p-1">
-                <NavLink to="/store">Our Store</NavLink>
+              <li className="take-away">
+                <NavLink className="p-2" to="/store">
+                  Our Store
+                </NavLink>
               </li>
-              <li className="take-away p-1">
-                <NavLink to="/blog">Blog</NavLink>
+              <li className="take-away">
+                <NavLink className="p-2" to="/blog">
+                  Blog
+                </NavLink>
               </li>
-              <li className="take-away p-1">
-                <NavLink to="/contact">Contact</NavLink>
+              <li className="take-away">
+                <NavLink className="p-2" to="/contact">
+                  Contact
+                </NavLink>
               </li>
             </ul>
           </nav>

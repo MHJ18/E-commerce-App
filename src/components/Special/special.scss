@@ -1,0 +1,68 @@
+@use"../Products/product.scss";
+
+.special-main {
+    & .title-featured {
+        color: #d62828;
+        font-size: 0.8rem;
+        font-family: var(--font-family-2);
+        font-weight: 600;
+    }
+
+    & .title-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-family: var(--font-family-2);
+    }
+
+    & .featured-text {
+        font-size: 0.8rem;
+    }
+
+    & .image-special {
+        width: 80%;
+        height: 80%;
+        overflow: hidden;
+    }
+
+    & .discount-special {
+        left: 3%;
+        top: 5%;
+        font-size: 0.6rem;
+    }
+
+    & .special-like {
+        left: 37%;
+        top: 5%;
+        width: 1rem;
+    }
+
+    & .special-options {
+        right: -30%;
+        top: 28%;
+
+        &>svg {
+            height: 1.2rem;
+            width: 1.2rem;
+            object-fit: cover;
+
+
+        }
+    }
+
+    & .card-image:hover div.special-options {
+        right: 0%;
+    }
+
+    & .round-time {
+        padding: 0.1rem 0.6rem;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: var(--font-family-4);
+    }
+
+    & .products-count-title {
+        font-size: 0.9rem;
+        font-family: var(--font-family-2);
+        font-weight: 500;
+    }
+}

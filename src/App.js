@@ -8,16 +8,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
+import Store from "./Pages/Store";
+
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Main />}>
+          <Route path={"/" || "#"} element={<Main />}>
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="store" element={<Store />} />
           </Route>
         </Routes>
       </BrowserRouter>

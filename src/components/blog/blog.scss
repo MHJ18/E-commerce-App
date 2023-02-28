@@ -1,0 +1,26 @@
+.card-main{
+    overflow: hidden;
+    & .card-body-main{
+        overflow: hidden;
+    }
+margin-top: 2rem;
+    & .card-button{
+        font-size: 0.8rem;
+        margin-top: 1.5rem;
+    }
+    & .card-date{
+        font-size: 0.8rem;
+        font-family: var(--font-family-1);
+        display: inline-block;
+        color: #999 !important;
+        letter-spacing: 0.3px;
+        margin-bottom: 0.5rem;
+    }
+    & .card-image{
+        transition: all 0.4s;
+       
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}

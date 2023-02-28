@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Badges from "../components/badges/Badges";
+import Blog from "../components/blog/Blog";
 import Collection from "../components/collection/Collection";
+import FamousProducts from "../components/famous/FamousProducts";
+
+import ProductsListing from "../components/Products/ProductsListing";
+import SpecialProducts from "../components/Special/SpecialProducts";
 import "./home.scss";
 const Home = () => {
   return (
@@ -155,6 +160,10 @@ const Home = () => {
       <main className="main-home-secondary">
         <Badges />
         <Collection />
+        <ProductsListing />
+        <FamousProducts />
+        <Blog />
+        <SpecialProducts />
       </main>
     </>
   );
