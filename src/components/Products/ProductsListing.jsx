@@ -2,7 +2,7 @@ import React, { useEffect, useLayoutEffect, useState } from "react";
 import HoverRating from "./Ratings";
 import "./product.scss";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
-import $ from "jquery";
+
 const ProductsListing = () => {
   const [checked, setchecked] = useState(false);
   const [products, setproducts] = useState([]);

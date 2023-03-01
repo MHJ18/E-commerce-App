@@ -9,17 +9,21 @@
 
 .store__main h5.sidebar-heading {
     font-family: var(--font-family-1);
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    color: #777;
+    letter-spacing: 0.2px;
+    font-weight: 700;
 }
 
 .store__main h6.sidebar-heading-inner {
     font-family: var(--font-family-2);
     font-size: 0.8rem;
+    color: #999;
+    letter-spacing: 0.2px;
     font-weight: 600;
 }
 
-.store__main h5.sidebar-heading + ul > li {
+.store__main h5.sidebar-heading+ul>li {
     font-family: var(--font-family-2);
     font-size: 0.8rem;
     font-weight: 400;
@@ -28,7 +32,7 @@
     transition: 0.2s;
 }
 
-.store__main h5.sidebar-heading + ul > li:hover {
+.store__main h5.sidebar-heading+ul>li:hover {
     font-family: var(--font-family-2);
     color: #ff9011;
 }
@@ -39,7 +43,7 @@ input.form-check-input:checked {
     border: rgb(29, 28, 28);
 }
 
-.form-floating > label {
+.form-floating>label {
     font-family: var(--font-family-1);
     padding: 0.2rem 0.3rem;
     font-size: 0.8rem;
@@ -48,12 +52,16 @@ input.form-check-input:checked {
     background-color: #eeeeee8a;
 }
 
-
-
 .input-price {
     background-color: #eeeeee8a;
     overflow: hidden;
     color: #999;
+}
+
+.price-sign {
+    font-size: 0.8rem;
+    font-family: var(--font-family-1);
+    font-weight: 500;
 }
 
 .input-price:focus {
@@ -61,54 +69,114 @@ input.form-check-input:checked {
     color: #555;
 }
 
-.row > * {
+.row>* {
     padding-right: 0 !important;
     padding-left: 0 !important;
     margin-top: 0;
 }
 
+
+
 ul {
     padding-left: 0;
 }
 
-.colors > .colors-pick:nth-child(1) {
-    background-color: #ff9011;
-}
-
-.colors-pick:nth-of-type(1) {
+.color-picker {
     width: 1.2rem;
     height: 1.2rem;
-    background-color: red;
+    background-color: rgb(29, 22, 22);
     border-radius: 50%;
-
 }
 
-.colors-pick:nth-of-type(2) {
-    width: 1.2rem;
-    height: 1.2rem;
-    background-color: rgb(0, 255, 42);
-    border-radius: 50%;
-
+.colors>button.colors-pick-1 {
+    background-color: yellow;
 }
 
-button.colors-pick:nth-of-type(3) {
-    width: 1.2rem;
-    height: 1.2rem;
-    background-color: rgb(132, 0, 255);
-    border-radius: 50%;
-
+.colors>button.colors-pick-2 {
+    background-color: rgb(0, 255, 149);
 }
 
+.colors>button.colors-pick-3 {
+    background-color: rgb(0, 119, 255);
+}
 
-.input-price:focus .form-floating > label {
+.colors>button.colors-pick-4 {
+    background-color: rgb(207, 111, 1);
+}
+
+.colors>button.colors-pick-5 {
+    background-color: rgb(185, 34, 34);
+}
+
+.colors>button.colors-pick-6 {
+    background-color: rgb(0, 255, 242);
+}
+
+.colors>button.colors-pick-7 {
+    background-color: rgb(165, 34, 154);
+}
+
+.colors>button.colors-pick-8 {
+    background-color: rgb(105, 64, 133);
+}
+
+.colors>button.colors-pick-9 {
+    background-color: rgb(127, 167, 58);
+}
+
+.colors>button.colors-pick-10 {
+    background-color: rgb(146, 47, 76);
+}
+
+.colors>button.colors-pick-11 {
+    background-color: rgb(25, 103, 221);
+}
+
+.tag {
+    font-weight: 500;
     background-color: #eee;
-
+    font-family: var(--font-family-2);
 }
 
 
 
-.price-sign {
-    font-size: 0.9rem;
+.random-text {
+    font-family: var(--font-family-1);
+    display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;  
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.random-body {
+    padding: 0.5rem 0;
+}
+
+.random-price {
     font-family: var(--font-family-1);
     font-weight: 500;
+    font-size: 0.8rem;
+    margin-left: 0.2rem;
+}
+.random-discount{
+    top: 4%;
+    left: 0;
+    font-size: 0.55rem;
+    letter-spacing: 0.3px;
+   padding-left: 0.3rem;
+   padding-top: 0.2rem;
+   padding-right: 0.4rem;
+    font-family: var(--font-family-2);
+    background-color: rgb(216, 49, 49);
+    font-weight: 500;
+}
+.tags:hover{
+    cursor: pointer;
+   
+    background-color: #ddddddbb;
+}
+.product-first:not(:last-child){
+    border-bottom: 1px solid rgb(206, 206, 206);
 }

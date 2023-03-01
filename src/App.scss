@@ -128,7 +128,7 @@ table {
 }
 
 body {
-  overflow: hidden;
+  scroll-behavior: smooth;
   box-sizing: border-box !important;
   line-height: 1.6 !important;
   font-size: 62.5%;

@@ -9,6 +9,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
 import Store from "./Pages/Store";
+import Blog from "./Pages/Blog";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="contact" element={<Contact />} />
+            <Route path="blog" element={<Blog />} />
             <Route path="store" element={<Store />} />
           </Route>
         </Routes>

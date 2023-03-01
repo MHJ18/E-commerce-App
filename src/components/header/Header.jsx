@@ -106,9 +106,9 @@ const Header = () => {
           </div>
         </section>
       </header>
-      <header className="header__menu text-white mb-4">
+      <header className="header__menu text-white mb-4 py-2">
         <section className="header__menu-list container-xxl font-size">
-          <nav className="d-flex align-items-center justify-content-start listed-menu ">
+          <nav className="d-flex align-items-center justify-content-start listed-menu gap-3 ">
             <div className="dropdown">
               <button
                 className="btn btn-secondary dropdown-toggle categories"

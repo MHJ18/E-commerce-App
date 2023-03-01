@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./special.scss";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 import HalfRating from "../Products/Ratings";
 

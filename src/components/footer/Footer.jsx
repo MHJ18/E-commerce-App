@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <>
       <footer className="footer__main text-white">
-        <div className=" container-xxl py-5">
+        <div className=" container-xxl py-4">
           <div className="row py-2 justify-content-center align-items-center ">
             <div className="col-lg-5 footer-signup">
               <div className="d-flex align-items-center gap-3">
