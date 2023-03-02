@@ -10,6 +10,8 @@ import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
 import Store from "./Pages/Store";
 import Blog from "./Pages/Blog";
+import CompareProducts from "./components/compare/CompareProducts";
+import WishList from "./components/wishlist/WishList";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="blog" element={<Blog />} />
             <Route path="store" element={<Store />} />
+            <Route path="compareProducts" element={<CompareProducts />} />
+            <Route path="favourites" element={<WishList />} />
           </Route>
         </Routes>
       </BrowserRouter>

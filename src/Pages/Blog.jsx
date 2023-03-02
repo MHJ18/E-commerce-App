@@ -1,6 +1,7 @@
 import React, { useState, useLayoutEffect } from "react";
+import BlogPage from "../components/blog/BlogPage";
 import BreadCrumbs from "../components/breadcrumbs/BreadCrumbs";
-import OurProducts from "../components/Storeproducts/OurProducts";
+import { Helmet } from "react-helmet";
 import "../components/Storeproducts/products.css";
 const Blog = () => {
   const [grid, setgrid] = useState("3");
@@ -43,6 +44,11 @@ const Blog = () => {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>Reviews-Blogs</title>
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+        <link rel="icon" type="image/png" href="favicon-32x32.png" />
+      </Helmet>
       <BreadCrumbs />
       <section className="bg-light py-4">
         <main className="container-xxl">
@@ -154,7 +160,7 @@ const Blog = () => {
                   </div>
                 </section>
 
-                <OurProducts grid={grid} />
+                <BlogPage grid={grid} />
               </main>
             </div>
           </div>

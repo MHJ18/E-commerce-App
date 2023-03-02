@@ -63,7 +63,7 @@ const Header = () => {
               <div className="col-lg-6">
                 <div className="menu-options ">
                   <div className="menu d-flex justify-content-evenly align-items-center">
-                    <Link className="items d-flex align-items-center gap-1">
+                    <Link to="/compareProducts" className="items d-flex align-items-center gap-1">
                       <svg className="favourite">
                         <use xlinkHref="images/compare.svg#svg-1" />
                       </svg>
@@ -71,7 +71,7 @@ const Header = () => {
                         Compare <br /> Products
                       </p>
                     </Link>
-                    <Link className="items d-flex align-items-center gap-1 px-1">
+                    <Link to="favourites" className="items d-flex align-items-center gap-1 px-1">
                       <svg>
                         <use xlinkHref="images/wishlist.svg#Capa_1" />
                       </svg>
