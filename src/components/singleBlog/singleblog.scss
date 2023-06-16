@@ -1,0 +1,16 @@
+.blogview-Wrapper {
+    font: optional;
+}
+.main-blog {
+    & img {
+        aspect-ratio: 14/8;
+    }
+    & .des-container p {
+        font-size: 0.96rem !important;
+        line-height: 1.8;
+        user-select: none;
+    }
+    & .blogs-marker:hover {
+        color: #2d79a1 !important;
+    }
+}

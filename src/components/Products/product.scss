@@ -3,7 +3,7 @@
         z-index: 100;
         transition: all 0.4s ease-in-out;
 
-        &>svg {
+        & > svg {
             cursor: pointer;
             transition: all 0.4s;
             width: 2rem;
@@ -54,7 +54,6 @@
         color: #ddd;
 
         font-family: var(--font-family-2);
-
     }
 
     & .featured-text {
@@ -112,7 +111,7 @@
         color: #9b2226;
     }
 
-    & .product-like>svg {
+    & .product-like > svg {
         width: 1.7rem;
         height: 1.7rem;
         overflow: hidden;
@@ -128,7 +127,7 @@
         }
     }
 
-    & .input-product:checked .product-like>svg {
+    & .input-product:checked .product-like > svg {
         color: rgb(192, 11, 11);
         fill: red;
         cursor: pointer;
@@ -147,4 +146,69 @@
         left: 5%;
         background-color: #9b2226 !important;
     }
+}
+
+.product_wrapper {
+   
+    & .reviews-wrapper{
+        font-family: var(--font-family-2);
+        & .reviews-border{
+            border-bottom: 2px solid rgb(18, 207, 50);
+            border-radius: 9px;
+            & .reviews-links{
+                text-decoration: underline !important;
+            }
+           
+        }
+        & .shadow-light{
+            box-shadow: 0px 3px 20px rgb(247, 236, 199,0.5);
+        }
+        & .review-write{
+            border-bottom: 1px solid  rgb(54, 104, 119);
+            font-family: var(--font-family-1);
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover{
+                color: rgb(54, 104, 119);
+                border-bottom-color: #178fff;
+            }
+        }
+    }
+    & .product-category {
+        & .color-select-product:hover {
+         outline: 1.7px solid darkorange;
+         outline-offset: 2px;
+        
+         transition:outline 0.3s ease-in-out;
+        }
+        font-family: var(--font-family-2);
+        & span:last-child {
+            font-size: 0.88rem;
+            font-weight: 500;
+        }
+        & span:first-child {
+            font-family: var(--font-family-1);
+        }
+    }
+    & .product-image {
+        & img.product-overview {
+            width: 100%;
+            aspect-ratio: 9/11;
+            object-fit: cover;
+        }
+    }
+}
+.label-review{
+    font-family: var(--font-family-1);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #666;
+    letter-spacing: 0.2px;
+  
+}
+.description-text{
+    font-size: 0.9rem;
+    line-height: 1.7;
+    line-break: loose;
+    word-break: break-all;
 }

@@ -63,7 +63,10 @@ const Header = () => {
               <div className="col-lg-6">
                 <div className="menu-options ">
                   <div className="menu d-flex justify-content-evenly align-items-center">
-                    <Link to="/compareProducts" className="items d-flex align-items-center gap-1">
+                    <Link
+                      to="/compareProducts"
+                      className="items d-flex align-items-center gap-1"
+                    >
                       <svg className="favourite">
                         <use xlinkHref="images/compare.svg#svg-1" />
                       </svg>
@@ -71,7 +74,10 @@ const Header = () => {
                         Compare <br /> Products
                       </p>
                     </Link>
-                    <Link to="favourites" className="items d-flex align-items-center gap-1 px-1">
+                    <Link
+                      to="favourites"
+                      className="items d-flex align-items-center gap-1 px-1"
+                    >
                       <svg>
                         <use xlinkHref="images/wishlist.svg#Capa_1" />
                       </svg>
@@ -80,7 +86,10 @@ const Header = () => {
                         <br /> Wishlist
                       </p>
                     </Link>
-                    <Link className="items d-flex align-items-center gap-1">
+                    <Link
+                      to="user"
+                      className="items d-flex align-items-center gap-1"
+                    >
                       <svg>
                         <use xlinkHref="images/user.svg#Capa_1" />
                       </svg>
@@ -150,7 +159,9 @@ const Header = () => {
             </div>
             <ul className="d-flex align-items-center justify content-center listed-menu gap-2 mb-0">
               <li className="take-away">
-                <NavLink className="p-2">Home</NavLink>
+                <NavLink active className="p-2">
+                  Home
+                </NavLink>
               </li>
               <li className="take-away">
                 <NavLink className="p-2" to="/store">

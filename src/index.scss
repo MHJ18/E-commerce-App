@@ -35,11 +35,11 @@ button {
     font-size: 0.8rem;
 }
 
-.form-control:focus {
-    box-shadow: unset !important;
-    outline: unset;
-    border: unset;
-}
+// .form-control:focus {
+    //     box-shadow: unset !important;
+    //     outline: unset;
+    //     border: unset;
+    // }
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -81,9 +81,26 @@ button {
 h5 {
     line-height: 1.5;
 }
-
+.bg-gray{
+    background-color: #f3a760b7;
+}
 .fs-7 {
     font-size: 0.8rem;
+}
+.fs-8{
+    font-size: 0.75rem;
+}
+.bg-platinum{
+    background-color: #CCDBDC; 
+}
+.text-jasper{
+    color: #52D1DC;
+}
+.text-cyan{
+    color: #129490;
+}
+.text-lighter {
+    color: #999;
 }
 
 .text-gray {

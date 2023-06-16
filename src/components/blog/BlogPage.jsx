@@ -79,7 +79,7 @@ const BlogPage = ({ grid }) => {
                         {res.details.info}
                       </p>
                       <Link
-                        to={"/" || "#"}
+                        to={"/myblog" || "#"}
                         class="btn btn-dark text-white rounded-5 fs-7 mt-2 align-self-end"
                       >
                         READ MORE

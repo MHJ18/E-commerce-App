@@ -1,0 +1,148 @@
+.user-warapper {
+
+    & .reset-text {
+        font-size: 0.9rem;
+        font-weight: 400;
+
+    }
+
+    & .input-text {
+        font-size: 0.6rem;
+        margin-top: -0.4rem;
+    }
+
+    & .form-title {
+        font-family: var(--font-family-2);
+        font-weight: 600;
+        font-size: 1.5rem;
+        letter-spacing: 0.2px;
+    }
+
+    & .input-container {
+
+
+        & label {
+            font-size: 0.9rem;
+            font-family: var(--font-family-2);
+            font-weight: 500;
+            color: #888;
+        }
+
+        & input {
+            min-height: 2.5rem;
+            font-family: var(--font-family-2);
+
+            &:invalid {
+                box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.5);
+            }
+        }
+
+        & .forgot-password {
+            font-family: var(--font-family-2);
+            font-weight: 500;
+            font-size: 0.8rem;
+            margin-top: 0.1rem;
+            color: #888;
+
+            &:hover {
+                color: var(--bs-primary);
+            }
+        }
+    }
+}
+
+.night-mode {
+    & .reset-text {
+        color: #aaa;
+        font-size: 0.9rem;
+        font-weight: 400;
+
+    }
+
+    & .input-text {
+        font-size: 0.6rem;
+        margin-top: -0.4rem;
+        color: #bbb;
+        letter-spacing: 0.1px;
+    }
+
+    & .bg-white {
+        background-color: #302d2d !important;
+        color: white;
+    }
+
+    & .btn-outline-dark {
+        color: var(--bs-yellow);
+        border-color: var(--bs-yellow);
+
+        &:hover {
+            background-color: var(--bs-yellow);
+            color: var(--bs-dark);
+        }
+    }
+
+    & .input-container {
+
+
+        & label {
+            font-size: 0.9rem;
+            font-family: var(--font-family-2);
+            font-weight: 400;
+
+            color: whitesmoke;
+        }
+
+        & input {
+            min-height: 2.5rem;
+            color: #eee;
+            font-family: var(--font-family-2);
+
+        }
+
+        & .forgot-password {
+            font-family: var(--font-family-2);
+            font-weight: 500;
+            font-size: 0.8rem;
+            margin-top: 0.1rem;
+            color: whitesmoke;
+
+            &:hover {
+                color: var(--bs-teal);
+            }
+        }
+    }
+}
+
+// .signin-form {
+//     border-radius: 1rem !important;
+// }
+
+.MuiGrid-grid-md-7 {
+    border-radius: 0.6rem 0 0 0.6rem;
+}
+
+.MuiGrid-grid-md-5 {
+    border-radius: 0 0.6rem 0.6rem 0;
+}
+
+.form-forgot {
+    font-size: 0.8rem;
+    color: #777 !important;
+    font-family: var(--font-family-2);
+    text-decoration: unset !important;
+    cursor: pointer;
+
+    &:hover {
+        color: #011D45 !important;
+
+        & #Sign__in-label {
+            color: rgb(248, 112, 0) !important;
+        }
+    }
+}
+
+#Sign__in-label {
+    font-weight: 500 !important;
+    color: rgb(0, 120, 218) !important;
+    letter-spacing: 0.2px;
+}

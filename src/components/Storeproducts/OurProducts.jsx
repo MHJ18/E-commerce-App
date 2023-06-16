@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import HoverRating from "../Products/Ratings";
 import "./products.css";
+import { Link } from "react-router-dom";
 
 const OurProducts = ({ grid }) => {
   const [checked, setchecked] = useState(false);
@@ -96,15 +97,16 @@ const OurProducts = ({ grid }) => {
                         : "d-flex flex-column align-items-center "
                     }
                   >
-                    <img
-                      src={res.image}
-                      style={{
-                        objectFit: "cover",
-                      }}
-                      className="card-img-top img-fluid store-wrapper"
-                      alt="..."
-                    />
-
+                    <Link to="/products/:id">
+                      <img
+                        src={res.image}
+                        style={{
+                          objectFit: "cover",
+                        }}
+                        className="card-img-top img-fluid store-wrapper"
+                        alt="..."
+                      />
+                    </Link>
                     <div className="card-body align-self-start">
                       <p className="card-title product-branding full-brand">
                         {res.others.brand}

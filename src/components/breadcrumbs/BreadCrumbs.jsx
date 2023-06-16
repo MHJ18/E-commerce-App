@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import { Link, NavLink, useLocation, Navigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./bread.scss";
 
 const BreadCrumbs = (props) => {
   const nav = useLocation();
-console.log(nav.pathname.charAt(1));
+
 return (
   <>
     <aside className="container-xxl ">

@@ -66,7 +66,7 @@ const Blog = () => {
                     <h5 class="card-title ">{res.details.title}</h5>
                     <p class="card-text">{res.details.info}</p>
                     <Link
-                      to={"/" || "#"}
+                      to={"/myblog" || "#"}
                       class="btn btn-dark text-white rounded-5 card-button"
                     >
                       READ MORE
